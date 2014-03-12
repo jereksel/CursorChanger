@@ -14,10 +14,10 @@ public class CursorChanger implements IXposedHookZygoteInit, IXposedHookInitPack
     public void initZygote(StartupParam startupParam) throws Throwable {
         MODULE_PATH = startupParam.modulePath;
 		XModuleResources modRes = XModuleResources.createInstance(MODULE_PATH, null);
-		XResources.setSystemWideReplacement("android", "drawable", "pointer_arrow", modRes.fwd(R.drawable.note_2));
-		XResources.setSystemWideReplacement("android", "drawable", "pointer_spot_anchor", modRes.fwd(R.drawable.note_2));
-    	XResources.setSystemWideReplacement("android", "drawable", "pointer_spot_hover", modRes.fwd(R.drawable.note_2));
-    	XResources.setSystemWideReplacement("android", "drawable", "pointer_spot_touch", modRes.fwd(R.drawable.note_2));
+        XResources.setSystemWideReplacement("android", "drawable", "pointer_arrow", modRes.fwd(R.drawable.note_2));
+        XResources.setSystemWideReplacement("android", "drawable", "pointer_spot_anchor", modRes.fwd(R.drawable.note_2));
+        XResources.setSystemWideReplacement("android", "drawable", "pointer_spot_hover", modRes.fwd(R.drawable.note_2));
+        XResources.setSystemWideReplacement("android", "drawable", "pointer_spot_touch", modRes.fwd(R.drawable.note_2));
     }
 
 	@Override
