@@ -2,5 +2,6 @@
 
     <string name="app_name">CursorChanger</string>
     <string name="title_activity_main">CursorChanger</string>
-
+	<string name="main">Some day, configuration menu will be here.</string>
+    
 </resources>
